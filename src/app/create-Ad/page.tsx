@@ -92,7 +92,7 @@ export default function CreateAd() {
             {loading ? "Sending..." : "Create Post"}
           </button>
         </form>
-        <Link className="my-5 text-2xl underline" href="/">Post</Link>
+        <Link className="my-5 text-2xl underline" href="/post">Post</Link>
       </div>
     </div>
   );
