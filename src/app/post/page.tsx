@@ -37,9 +37,13 @@ interface Post {
 }
 
 export default async function PostsPage() {
-  const res = await fetch("http://localhost:3000/api/create-Ad", {
-    cache: "no-store", // همیشه دیتای تازه
-  });
+  // const res = await fetch("http://localhost:3000/api/create-Ad", {
+  //   cache: "no-store", // همیشه دیتای تازه
+  // });
+  const res = await fetch(
+  `${process.env.NEXT_PUBLIC_SITE_URL}/api/create-Ad`,
+  { cache: "no-store" }
+);
 //    const res = await fetch("/api/create-Ad", {
 //   cache: "no-store",
 // });
